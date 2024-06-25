@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <title>My Webpage</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sandwich Creator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="favicon" href="favicon.ico">
 </head>
 <body>
-    <!-- Your content goes here -->
-    <h1>Hello World!</h1>
-    <div id="kitty">
-        <img src="images/kitten.jpg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
-    </div>
+    <h1>The Sandwich Creator</h1>
+    <form>
+        <label for="sandwichName">Sandwich Name</label>
+        <input type="text" id="sandwichName" name="sandwichName" required>
+       
+        <div>
+            <p>Please Select a Type of Bread:</p>
+            <label for="white">White</label>
+            <input type="radio" id="white" name="bread" value="white">
+            <br>
+            <label for="wheat">Wheat</label>
+            <input type="radio" id="wheat" name="bread" value="wheat">
+            <br>
+        </div>
+
+        <div>
+            <label for="protien">Select Protien:</label>
+            <select id="protien">
+                <option value="turkey">Turkey</option>
+                <option value="ham">Ham</option>
+                <option value="salami">Salami</option>
+                <option value="beef">Roast Beef</option>
+                <option value="wheat">Wheat Bread</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Select Your Toppings:</p>
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" id="lettuce" name="lettuce" value="lettuce"><br>
+            <label for="pickles">Pickles</label>
+            <input type="checkbox" id="pickles" name="pickles" value="pickles"><br>
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" id="tomato" name="tomato" value="tomato"><br>
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="cheese" name="cheese" value="cheese"><br>
+            <label for="onion">Onion</label>
+            <input type="checkbox" id="onion" name="onion" value="onion"><br>
+            <label for="wbread">Wheat Bread</label>
+            <input type="checkbox" id="wbread" name="wbread" value="wbread"><br>
+            <label gravel">Gravel</label>
+            <input type="checkbox" id="gravel" name="gravel" value="gravel"><br>
+        </div>
+        <input type="submit" value="Submit"
+    </form>
 </body>
 </html>
