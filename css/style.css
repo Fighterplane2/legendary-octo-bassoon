@@ -1,7 +1,40 @@
-#kitty{
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display:grid;
+    grid-template-areas:
+    'nameType breadType'
+    'protienType toppingType'
+
+}
+
+.nameType{
+    grid-area: nameType;
+}
+
+.breadType{
+    grid-area: breadType;
+}
+
+.protienType{
+    grid-area: protienType;
+}
+
+.toppingType{
+    grid-area: toppingType;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/* #kitty{
     width: 100px;
     height: 100px;
     position: relative;
     top: 0;
     left: 0;
-}
+} */
