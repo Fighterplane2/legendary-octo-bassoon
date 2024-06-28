@@ -1,34 +1,44 @@
-.body{
-    margin: 0;
-    padding: 0;
+.container{
+display: grid;
+grid-template-columns: 3 ,1fr;
+
+grid-gap: 10px;
 }
 
-.container{
-    display:grid;
-    grid-template-areas:
-    'nameType breadType'
-    'protienType toppingType'
-
+h1{
+    text-align: center;
 }
 
 .nameType{
-    grid-area: nameType;
+    align-items: center;
+    text-align: center;
 }
 
 .breadType{
-    grid-area: breadType;
-}
-
-.protienType{
-    grid-area: protienType;
-}
-
-.toppingType{
-    grid-area: toppingType;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+.protienType{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.toppingType{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.submitButton{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 /* #kitty{
     width: 100px;
